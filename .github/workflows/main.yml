@@ -1,0 +1,17 @@
+name: Super-Linter
+
+on: push
+
+jobs:
+    Super-Lint:
+        name: Lint code bse
+        runs-on: ubuntu-latest
+        steps:
+           - name: checkout code
+             uses: actions/checkout@V2
+
+           - name: Run Super-Linter
+             uses: github/super-Linter@V3
+             
+               DEFAULT_BRANCH:main
+               GITHUB_TOKEN:${{Seckets.GITHUB_TOKEN}} 
