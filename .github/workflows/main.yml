@@ -12,6 +12,6 @@ jobs:
 
            - name: Run Super-Linter
              uses: github/super-Linter@V3
-             
+             env:
                DEFAULT_BRANCH:main
                GITHUB_TOKEN:${{Seckets.GITHUB_TOKEN}} 
